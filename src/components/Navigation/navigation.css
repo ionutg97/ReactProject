@@ -1,0 +1,70 @@
+nav {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    font-size: 18px;
+}
+
+.nav__container {
+    margin-left: 105px;
+    margin-right: 105px;
+    height: 100%;
+}
+
+.nav__logo {
+    width: 164px;
+    background-color: #003fdc;
+}
+
+.logo {
+    float: left;
+    height: 60px;
+    border: 0;
+    color: #ffffff;
+    letter-spacing: 0.4px;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+#nav__menu {
+    float: left;
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#nav__menu li {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    padding: 10px 20px;
+}
+
+#nav__menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    color: #787a81;
+}
+
+#nav__menu .nav__active-item a {
+    color: #030a1a;
+}
+
+#nav__account-btn {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 105px;
+    right: 0;
+    border: none;
+    background: none;
+}

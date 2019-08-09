@@ -1,0 +1,14 @@
+#editor-dashboard__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#header__title {
+    font-size: 42px;
+    line-height: 1.33;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    color: #030a1a;
+}

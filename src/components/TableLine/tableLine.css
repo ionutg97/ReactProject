@@ -1,0 +1,65 @@
+.article-line td {
+    font-size: 16px;
+    color: #030a1a;
+    background-color: #ffffff;
+}
+
+.article-line td:nth-child(2) {
+    min-width: 100px !important;
+}
+
+.article-line td:nth-child(3) {
+    min-width: 80px !important;
+}
+
+.article-line__status {
+    text-transform: capitalize;
+}
+
+.article-line__status::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.writing::before {
+    background-color: var(--blue);
+}
+
+.pending::before {
+    background-color: var(--yellow);
+}
+
+.approved::before {
+    background-color: var(--green);
+}
+
+.rejected::before {
+    background-color: var(--red);
+}
+
+.article-line__action-btns>a>img {
+    height: 18px;
+    filter: opacity(0.5);
+}
+
+.article-line__action-btns>a:not(:first-child) {
+    margin-left: 5px;
+}
+
+.article-line__action-btns a svg {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    background-color: var(--blue);
+  }
+
+  .article-line__action-btns button svg {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    background-color: var(--blue);
+  }

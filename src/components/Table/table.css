@@ -1,0 +1,18 @@
+.articles-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.articles-table th, .articles-table td {
+    padding: 20px 30px; 
+    font-weight: 600;
+}
+
+.articles-table th {
+    color: #787a81;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+    text-transform: uppercase;
+}

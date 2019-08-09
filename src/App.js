@@ -1,22 +1,50 @@
-import React, { Component } from "react";
-import Header from './components/Header';
-import Content from './components/Content';
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Switch,Route } from "react-router-dom";
 
-class App extends Component {
-  render() {
+
+import Dashboard from './Components/Dashboard';
+import Home from './Components/Home';
+import Navigation from './Components/Navigation';
+import Dialog from './Components/Dialog';
+
+
+class App extends React.Component
+{
+  constructor(){
+    super();
+    this.protectedRoutes =[
+      {
+        id:1,
+        exact: true,
+        path: '/',
+        component: Home,
+        otherProps: 'Other prop to be passed in the Route props',
+      },
+      {
+        id:2,
+        exact: true,
+        path: '/dashboard',
+        component: Dashboard,
+        otherProps: 'Other prop to be passed in the Route props',
+
+      }
+
+    ]
+  }
+
+  render(){
     return (
-      <div>
-        <Header
-          title="Header title from props..."
-          subtitle="Header subtitle from props..."
-        />
-        <Content
-          counter={10}
-        />
-      </div>
+        <Router>  
+          <Navigation/> 
+          <Dialog/>
+          <Switch>
+          {this.protectedRoutes.map( (route, index) =>(<Route key={ route.exact} {...route} /> ))}
+          </Switch>
+        </Router>
     );
   }
-}
+  }
+
+
 
 export default App;
